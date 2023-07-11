@@ -612,6 +612,7 @@
               name="user-comment"
               id="comment"
               placeholder="Text input"
+              rows="7"
             ></textarea>
           </div>
 
@@ -619,14 +620,20 @@
           <div class="modal-form-field">
             <input
               type="checkbox"
-              class="modal-form-checkbox input"
+              class="modal-form-checkbox input visually-hidden"
               name="agreement"
               value="privacy-policy"
               id="privacy-policy"
             />
-            <label for="privacy-policy" class="modal-form-policy"
-              >I accept the terms and conditions of the Privacy Policy</label
-            >
+            <label for="privacy-policy" class="modal-form-policy">
+              <span class="form-policy-box">
+                <svg class="form-policy-icon" width="10" height="8">
+                  <use href="./images/icons.svg#checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="#" class="form-policy-link"> Privacy Policy </a>
+            </label>
           </div>
           <button class="modal-form-btn" type="submit">
             Send
